@@ -12,7 +12,7 @@ const webhookClient = adminWebhookUrl ? new WebhookClient({ url: adminWebhookUrl
 // 현재 버전 가져오기
 function getCurrentVersion() {
     try {
-        const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, 'package.json'), 'utf8'));
+        const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json'), 'utf8'));
         return packageJson.version;
     } catch (error) {
         console.error('[ERROR] 현재 버전 가져오기 실패:', error);
