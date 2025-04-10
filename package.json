@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.15.0",
+    "pg": "^8.13.3"
+  },
+  "name": "hyolss-lite",
+  "version": "3.3.0-lite",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "restart": "node index.js",
+    "maintenance": "node system-maintenance.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SOIV-Studio/HYolss-Lite.git"
+  },
+  "author": "soiv_studio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SOIV-Studio/HYolss-Lite/issues"
+  },
+  "homepage": "https://github.com/SOIV-Studio/HYolss-Lite#readme"
+}
