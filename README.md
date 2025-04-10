@@ -202,6 +202,7 @@ Make sure you have the following installed:
 ## License 📝
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 (KR) 이 프로젝트 및 레포는 MIT 라이센스를 따라갑니다 - 자세한 내용은 [LICENSE](LICENSE) 파일을 확인 해주세요.
 
 SOIV_Studio-Project_BOT-C_2020~2025
