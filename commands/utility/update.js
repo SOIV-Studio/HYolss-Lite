@@ -121,7 +121,7 @@ module.exports = {
             await new Promise(resolve => setTimeout(resolve, 1500));
             
             // 업데이트 프로세스 실행
-            runUpdateProcess();
+            runUpdateProcess(force);
             
         } catch (error) {
             console.error('[ERROR] 업데이트 명령어 실행 중 오류:', error);
@@ -206,7 +206,7 @@ module.exports = {
             await new Promise(resolve => setTimeout(resolve, 1500));
             
             // 업데이트 프로세스 실행
-            runUpdateProcess();
+            runUpdateProcess(force);
             
         } catch (error) {
             console.error('[ERROR] 업데이트 명령어 실행 중 오류:', error);

@@ -207,7 +207,7 @@ function executeCommand(command) {
 }
 
 // 업데이트 프로세스 실행
-async function runUpdateProcess() {
+async function runUpdateProcess(force = false) {
     try {
         // 1. 현재 버전과 최신 버전 확인
         const currentVersion = getCurrentVersion();
@@ -233,7 +233,7 @@ async function runUpdateProcess() {
         console.log(`[INFO] 현재 버전: ${currentVersion}, GitHub 버전: ${latestVersion}`);
         
         // 2. 버전 비교
-        if (!isNewerVersion(currentVersion, latestVersion)) {
+        if (!isNewerVersion(currentVersion, latestVersion) && !force) {
             console.log('[INFO] 이미 최신 버전입니다. 업데이트가 필요하지 않습니다.');
             return false;
         }
