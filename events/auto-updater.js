@@ -337,6 +337,7 @@ async function runUpdateProcess() {
     }
 }
 
+/*
 // 자동 업데이트 체크 (주기적으로 실행)
 function scheduleUpdateCheck(intervalHours = 6) { // 6시간에서 12시간으로 변경
     console.log(`[INFO] 자동 업데이트 체크 예약됨: 봇 시작 1분 후 첫 체크, 이후 ${intervalHours}시간마다 체크`);
@@ -356,6 +357,7 @@ function scheduleUpdateCheck(intervalHours = 6) { // 6시간에서 12시간으�
         console.log(`[DEBUG] 업데이트 체크 인터벌 ID: ${intervalId}`);
     }, 60 * 1000); // 봇 시작 1분 후 첫 체크
 }
+*/
 
 module.exports = {
     getCurrentVersion,
@@ -363,6 +365,6 @@ module.exports = {
     getLatestCommitInfo,
     isNewerVersion,
     runUpdateProcess,
-    scheduleUpdateCheck,
+//    scheduleUpdateCheck,
     sendLogToAdminServer
 };

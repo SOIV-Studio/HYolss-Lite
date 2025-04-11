@@ -137,8 +137,10 @@ async function startBot() {
 
 startBot();
 
+/*
 // 자동 업데이트 체크 예약 (12시간마다 실행)
 if (process.env.NODE_ENV !== 'development') {
     console.log('[INFO] 자동 업데이트 체크 예약 중...');
     scheduleUpdateCheck(6); // 6시간에서 12시간으로 변경
 }
+*/
