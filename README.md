@@ -149,7 +149,7 @@ Make sure you have the following installed:
 
 - 오프닝 인사 방식 수정
     * 라이트 버전에 맞는 방식으로 수정 예정
-    * DB 시스템 전면 삭제
+    * 기존에 사용하는 방식에 사용중인 DB 연동 제외
     * 서버 입장 오프닝 인사는 단일 한개로 변경
 - auto-updater / updater
     * 월래라면 라이트 버전에 맞게 업데이트 시스템도 삭제를 해야 맞다고 생각하지만 만약을 위해 남김
@@ -160,6 +160,9 @@ Make sure you have the following installed:
         - 깃허브 레포가 private의 조건 작업 제외 / Lite 버전은 private으로 전환할 예정이 아에 없음
 - commands\default\help.js 관련 작업 필요
     * 깃북에서도 작업중이지만 별도 간단한 설명을 해줄수 있는 명령어가 필요
+- random-words-store의 DB?
+    * 기존 내부에 txt 파일에 저장된 내용을 불러오는 방식에서 DB에서 불러오는 방식으로 교채 하는 것도 생각중.
+        - 사유: Lite 버전과 메인 버전의 음식 등록되는 단어 개수의 싱크를 맞추기 위해
 
 ## Contributing[기어] 💖
 
