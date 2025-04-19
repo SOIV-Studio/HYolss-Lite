@@ -23,8 +23,8 @@ HYolss는 처음에는 개인 즉 재가 사용하려고 제작을 시작했던 
         - 24/7 운영 중 / 상시 무료 서비스 사용중
         - Lite 버전은 지속적인 장기간 운영을 시행중입니다!
         - < VM 정보 >
-            * Lite : 2 OCPU, 8 RAM
-            * Dev([HYolss](https://github.com/SOIV-Studio/HYolss)) : 2 OCPU, 16 RAM
+            * Lite : 2 OCPU, 8 RAM / Ubuntu 24.*
+            * Dev([HYolss](https://github.com/SOIV-Studio/HYolss)) : 2 OCPU, 16 RAM / Ubuntu 24.*
 
 ## Community[커뮤니티]
 
