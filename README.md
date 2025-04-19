@@ -19,8 +19,8 @@ HYolss는 처음에는 개인 즉 재가 사용하려고 제작을 시작했던 
         - 다국어 지원은 Lite 버전에서 지원 예정이 없습니다.
     * version : lite-3.3.1
         - 현재는 Releases 버전만 제공중이며 Beta 버전은 지원 예정이 없습니다.
-    * Hosting Server : Lite버전의 디스코드 봇은 GCP에서 e2-micro으로 운영중입니다.
-        - 24/7 운영 중 / 무료 자원 사용중
+    * Hosting Server : Lite버전의 디스코드 봇은 OCI(Oracle Cloud)에서 Free Tier/Arm Ampere A1으로 운영중입니다.
+        - 24/7 운영 중 / 상시 무료 서비스 사용중
         - Lite 버전은 지속적은 장기간 운영을 시행중입니다!
 
 ## Community[커뮤니티]
