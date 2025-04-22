@@ -50,7 +50,7 @@ module.exports = {
             { name: '열심히 성장 중! 같이 성장할 개발자를 찼아요!', type: ActivityType.Custom },
             { name: `${serverCount}개의 서버에서 활동 중!`, type: ActivityType.Custom },
             { name: '(/☆ワ☆)/~~☆’.･.･:★’.･.･:☆ MIKU MIKU BEAAAAAAAAAAAAAM!☆', type: ActivityType.Custom },
-            { name: '88☆彡 듣는 중', type: ActivityType.Custom }
+            { name: '88☆彡', type: ActivityType.Listening }
         ];
         
         /* 이전 상테 메시지
