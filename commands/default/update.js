@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder } = require('discord.js');
-const { runUpdateProcess, getCurrentVersion, getLatestVersion, getLatestCommitInfo, isNewerVersion } = require('../../events/auto-updater');
+const { runUpdateProcess, getCurrentVersion, getLatestVersion, getLatestCommitInfo, isNewerVersion } = require('../../utils/auto-updater');
 
 // 개발자 ID 목록 가져오기
 const developerIds = process.env.BOT_DEVELOPER_IDS ? process.env.BOT_DEVELOPER_IDS.split(',') : [];

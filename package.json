@@ -3,8 +3,10 @@
     "@supabase/supabase-js": "^2.49.4",
     "discord.js": "^14.18.0",
     "dotenv": "^16.4.7",
+    "express": "^5.1.0",
     "mongodb": "^6.15.0",
-    "pg": "^8.13.3"
+    "pg": "^8.13.3",
+    "semver": "^7.7.1"
   },
   "name": "hyolss-lite",
   "version": "lite-3.3.1",
