@@ -2,14 +2,12 @@
 
 HYolss Project의 HYolss Lite에 오신것을 환영합니다!
 
-HYolss는 처음에는 개인 즉 재가 사용하려고 제작을 시작했던 디스코드 봇입니다.
-
+HYolss는 처음에는 개인 즉 재가 사용하려고 제작을 시작했던 디스코드 봇입니다.<br>
 그러나 지금 개발중인 봇이 너무나도 거대해저 무료 자원으로 봇을 운영하기 힘든 상황에 노여 다음과 같은 Lite버전이 나오게 되었습니다.
 
 이 디스코드 봇은 누구나 사용가능하고 누구나 직접 봇을 구동하실 수 있어요!
 
-디스코드 봇 추가는 아레 링크에서 가능합니다.
-
+디스코드 봇 추가는 아레 링크에서 가능합니다.<br>
 [Discord Bot Add Link](https://discord.com/oauth2/authorize?client_id=888061096441819166)
 
 - HYolss Discord Bot Info
@@ -42,15 +40,13 @@ HYolss는 처음에는 개인 즉 재가 사용하려고 제작을 시작했던 
 
 ## announcements 📢
 
-이 봇은 HYolss의 Lite 버전. 즉 일부 분리된 버전임을 말합니다.
-
+이 봇은 HYolss의 Lite 버전. 즉 일부 분리된 버전임을 말합니다.<br>
 개발중인 봇의 레포는 아레 링크에서 확인해주세요
 
 https://github.com/SOIV-Studio/HYolss
 
 ---
-아쉽개도 Lite 버전에서도 Docker파일은 제공되지 않습니다.
-
+아쉽개도 Lite 버전에서도 Docker파일은 제공되지 않습니다.<br>
 추후 별도로 제공될 예정은 있을 수 있으나 지금은 제공되지 않습니다.
 
 ## Features[특징] 🎉
