@@ -1,23 +1,34 @@
 const { SlashCommandBuilder, EmbedBuilder, InteractionResponseFlags } = require('discord.js');
-const fs = require('fs');
-const path = require('path');
+const { createClient } = require('@supabase/supabase-js');
+require('dotenv').config();
 
-// 랜덤 단어 파일에서 단어들을 읽어오는 함수
-function getRandomWord() {
+// Supabase 클라이언트 초기화
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+// Supabase에서 랜덤 편의점 메뉴를 가져오는 함수
+async function getRandomConvenienceMenu() {
     try {
-        const wordsPath = path.join(__dirname, '..', '..', 'random-words-store', 'convenience.txt');
-        console.log('[INFO] Reading file from path:', wordsPath);
-        
-        const fileContent = fs.readFileSync(wordsPath, 'utf8');
-        const words = fileContent.split('\n').map(word => word.trim()).filter(word => word !== '');
-        
-        if (words.length === 0) {
-            throw new Error('[ERROR] No words found in the file');
+        const { data, error } = await supabase
+            .from('menu_items')
+            .select('name')
+            .eq('type', 'convenience');
+            
+        if (error) {
+            console.error('[ERROR] Supabase 조회 중 오류:', error);
+            throw error;
         }
         
-        return words[Math.floor(Math.random() * words.length)];
+        if (!data || data.length === 0) {
+            throw new Error('[ERROR] No convenience menu items found in the database');
+        }
+        
+        // 랜덤으로 메뉴 선택
+        const randomIndex = Math.floor(Math.random() * data.length);
+        return data[randomIndex].name;
     } catch (error) {
-        console.error('[ERROR] Error in getRandomWord:', error);
+        console.error('[ERROR] Error in getRandomConvenienceMenu:', error);
         throw error;
     }
 }
@@ -30,18 +41,17 @@ module.exports = {
         try {
             // 사용자 ID를 가져와 멘션 형식으로 변환
             const userMention = `<@${interaction.user.id}>`;
-            const randomWord = getRandomWord();
+            const randomMenu = await getRandomConvenienceMenu();
             
             const embed = new EmbedBuilder()
                 .setColor('#FF6B6B')
                 .setTitle('🏪 오늘의 편의점 메뉴 추천')
-                .setDescription(`${userMention} 님 ${randomWord} 어때?`)
+                .setDescription(`${userMention} 님 ${randomMenu} 어때?`)
                 .setTimestamp()
                 .setFooter({ text: 'HYolss' });
 
             return interaction.reply({
                 embeds: [embed]
-                // ephemeral: false 옵션 제거 (기본값이 false이므로 생략 가능)
             });
         } catch (error) {
             console.error('[ERROR] Error in 오늘의편의점 command:', error);

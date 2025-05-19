@@ -7,9 +7,9 @@ const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-async function addMenuToSupabase(menuName, menuType) {
+async function deleteMenuFromSupabase(menuName, menuType) {
     try {
-        // 중복 체크
+        // 메뉴 존재 여부 확인
         const { data: existingMenu, error: checkError } = await supabase
             .from('menu_items')
             .select('*')
@@ -17,40 +17,40 @@ async function addMenuToSupabase(menuName, menuType) {
             .eq('type', menuType);
             
         if (checkError) {
-            console.error('[ERROR] 중복 체크 중 오류:', checkError);
+            console.error('[ERROR] 메뉴 조회 중 오류:', checkError);
             return { success: false, message: '데이터베이스 조회 중 오류가 발생했습니다.' };
         }
         
-        if (existingMenu && existingMenu.length > 0) {
-            return { success: false, message: '이미 존재하는 메뉴입니다.' };
+        if (!existingMenu || existingMenu.length === 0) {
+            return { success: false, message: '해당 메뉴가 존재하지 않습니다.' };
         }
         
-        // 새 메뉴 추가
-        const { data, error } = await supabase
+        // 메뉴 삭제
+        const { error } = await supabase
             .from('menu_items')
-            .insert([
-                { name: menuName, type: menuType }
-            ]);
+            .delete()
+            .eq('name', menuName)
+            .eq('type', menuType);
             
         if (error) {
-            console.error('[ERROR] 메뉴 추가 중 오류:', error);
-            return { success: false, message: '데이터베이스에 메뉴 추가 중 오류가 발생했습니다.' };
+            console.error('[ERROR] 메뉴 삭제 중 오류:', error);
+            return { success: false, message: '데이터베이스에서 메뉴 삭제 중 오류가 발생했습니다.' };
         }
         
-        return { success: true, message: '메뉴가 성공적으로 추가되었습니다.' };
+        return { success: true, message: '메뉴가 성공적으로 삭제되었습니다.' };
     } catch (error) {
-        console.error('[ERROR] Error in addMenuToSupabase:', error);
-        return { success: false, message: '메뉴 추가 중 오류가 발생했습니다.' };
+        console.error('[ERROR] Error in deleteMenuFromSupabase:', error);
+        return { success: false, message: '메뉴 삭제 중 오류가 발생했습니다.' };
     }
 }
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('메뉴추가')
-        .setDescription('[개발자 전용 명령어] 새로운 메뉴를 추가합니다.')
+        .setName('메뉴삭제')
+        .setDescription('[개발자 전용 명령어] 기존 메뉴를 삭제합니다.')
         .addStringOption(option =>
             option.setName('메뉴이름')
-                .setDescription('추가할 메뉴의 이름을 입력하세요.')
+                .setDescription('삭제할 메뉴의 이름을 입력하세요.')
                 .setRequired(true))
         .addStringOption(option =>
             option.setName('메뉴종류')
@@ -81,12 +81,12 @@ module.exports = {
         const menuName = interaction.options.getString('메뉴이름');
         const menuType = interaction.options.getString('메뉴종류');
         
-        // Supabase에 메뉴 추가
-        const result = await addMenuToSupabase(menuName, menuType);
+        // Supabase에서 메뉴 삭제
+        const result = await deleteMenuFromSupabase(menuName, menuType);
         
         const embed = new EmbedBuilder()
             .setColor(result.success ? '#00FF00' : '#FF0000')
-            .setTitle('📝 메뉴 추가 결과')
+            .setTitle('🗑️ 메뉴 삭제 결과')
             .addFields(
                 { name: '메뉴', value: menuName, inline: true },
                 { name: '종류', value: menuType === 'menu' ? '일반메뉴' : '편의점메뉴', inline: true },
