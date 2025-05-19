@@ -182,7 +182,7 @@ Make sure you have the following installed:
         - 추후 작업때에 같이 업데이트로 수정될 듯
 - commands\default\help.js 관련 작업 필요
     * 깃북에서도 작업중이지만 별도 간단한 설명을 해줄수 있는 명령어가 필요
-- [ ] random-words-store의 DB?
+- [x] random-words-store의 DB?
     * 기존 내부에 txt 파일에 저장된 내용을 불러오는 방식에서 DB에서 불러오는 방식으로 교채 하는 것도 생각중.
         - 사유: Lite 버전과 메인 버전의 음식 등록되는 단어 개수의 싱크를 맞추기 위해
         - 작업 확정 / txt 파일에서 supabase으로 이전 작업 준비중 / 기존 레포에서 적용 후 Lite에 적용 예정
