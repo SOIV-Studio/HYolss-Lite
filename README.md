@@ -23,20 +23,12 @@ HYolss는 처음에는 개인 즉 재가 사용하려고 제작을 시작했던 
 
 ## Community[커뮤니티]
 
-<div align="center">
-  <a href="https://discord.gg/tVnhbaB9yY">
-    <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
-  </a>
-  <a href="https://x.com/SOIV_Studio">
-    <img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white" alt="X">
-  </a>
-  <a href="https://instagram.com/DocuVerseOfficial">
-    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram">
-  </a>
-  <a href="https://youtube.com/@SOIV_Studio_official">
-    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="YouTube">
-  </a>
-</div>
+<p align="center">
+  <a href="https://discord.gg/tVnhbaB9yY"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://x.com/SOIV_Studio"><img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white" alt="X"></a>
+  <a href="https://instagram.com/DocuVerseOfficial"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram"></a>
+  <a href="https://youtube.com/@SOIV_Studio_official"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="YouTube"></a>
+</p>
 
 ## announcements 📢
 
@@ -212,8 +204,8 @@ Make sure you have the following installed:
 
 ## License 📝
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.<br>
 (KR) 이 프로젝트 및 레포는 MIT 라이센스를 따라갑니다 - 자세한 내용은 [LICENSE](LICENSE) 파일을 확인 해주세요.
 
-SOIV_Studio-Project_BOT-C_2020~2025
+SOIV Studio / Palette Square Studio (PS Studio)<br>
+HYolss-Project_C_2020~2025
