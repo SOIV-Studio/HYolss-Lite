@@ -1,5 +1,5 @@
 const { Events, MessageFlags } = require('discord.js');
-const { logCommand, logError } = require('../database/nosql/mongodb.js');
+const { logCommand, logError } = require('../database/nosql-mongodb.js');
 
 module.exports = {
 	name: Events.InteractionCreate,

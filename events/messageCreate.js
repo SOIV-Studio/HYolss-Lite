@@ -1,6 +1,6 @@
 const { Collection } = require('discord.js');
-const { logCommand } = require('../database/nosql/mongodb.js');
-const { getServerSettings } = require('../database/sql/supabase.js');
+const { logCommand } = require('../database/nosql-mongodb.js');
+const { getServerSettings } = require('../database/sql-supabase.js');
 
 module.exports = {
     name: 'messageCreate',

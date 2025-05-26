@@ -1,6 +1,6 @@
 const { Events } = require('discord.js');
-const { updateServerHistory } = require('../database/sql/supabase.js');
-const { logCommand } = require('../database/nosql/mongodb.js');
+const { updateServerHistory } = require('../database/sql-supabase.js');
+const { logCommand } = require('../database/nosql-mongodb.js');
 
 // 서버 퇴장 로그 기록 함수
 async function logGuildLeave(guild) {

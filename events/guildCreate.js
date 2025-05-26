@@ -1,6 +1,6 @@
 const { Events, EmbedBuilder } = require('discord.js');
-const { updateServerHistory, addInviterInfo, initializeTables } = require('../database/sql/supabase.js');
-const { logCommand } = require('../database/nosql/mongodb.js');
+const { updateServerHistory, addInviterInfo, initializeTables } = require('../database/sql-supabase.js');
+const { logCommand } = require('../database/nosql-mongodb.js');
 
 // 서버 입장 로그 기록 함수
 async function logGuildJoin(guild, inviterId) {
