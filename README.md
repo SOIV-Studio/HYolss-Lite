@@ -1,24 +1,29 @@
 # HYolss Lite (from HYolss Project) [Discord BOT]
 
-HYolss Project의 HYolss Lite에 오신것을 환영합니다!
+> 해당 레포는 HYolss Project 중 오픈소스로 공개된 Repo입니다.<br>
+> 누구나 자신이 직접 디스코드 봇을 구동하여 사용할 수 있습니다.
 
-HYolss는 처음에는 개인 즉 재가 사용하려고 제작을 시작했던 디스코드 봇입니다.<br>
-그러나 지금 개발중인 봇이 너무나도 거대해저 무료 자원으로 봇을 운영하기 힘든 상황에 노여 다음과 같은 Lite버전이 나오게 되었습니다.
+해당 Repo는 HYolss의 Lite 버전입니다.
 
-이 디스코드 봇은 누구나 사용가능하고 누구나 직접 봇을 구동하실 수 있어요!
+메인 버전은 현재까지 지속적으로 개발 중에 있으며 개발 진행도에 따라 Lite 버전도 동일하게 업데이트가 진행됩니다.<br>
+디스코드 봇을 실행하는 방법 및 기여 등과 같은 내용은 아레 작성되어 있으니 그 부분을 확인해주시면 됩니다.
 
-디스코드 봇 추가는 아레 링크에서 가능합니다.<br>
-[Discord Bot Add Link](https://discord.com/oauth2/authorize?client_id=888061096441819166)
+해당 버전은 메인 버전과는 다르게 일부 기능 및 시스템이 제외 또는 제한이 걸려있는 상태로 제공됩니다.<br>
+모든 기능 및 시스템을 사용하고 싶으신 유저분계서는 Lite 버전이 아닌 정식 서비스로 운영중인 메인 버전을 권장드립니다.
+
+정식 라이브 서비스 중인 웹 대시보드 사이트는 이쪽을 사용해주세요.<br>
+**https://dashboard.soiv-studio.xyz/**
 
 - HYolss Discord Bot Info
-    * Discord API : Discord.js
-    * Languages : node.js(JavaScript)
-    * locales : ko_KR
-        - 다국어 지원은 Lite 버전에서 지원 예정이 없습니다.
-    * version : lite-3.3.1
+    - Discord API : Discord.js
+    - Languages : node.js(JavaScript)
+    - locales : ko_KR, ja-JP, en-US
+        - Lite 버전에서는 다국어 지원이 있을 예정입니다.
+        - 3개 언어를 제외한 나머지 언어의 지원은 없습니다.
+    - version : lite-3.3.1
         - 현재는 Releases 버전만 제공중이며 Beta 버전은 지원 예정이 없습니다.
-    * Hosting Server : 당분간 Lite버전으로 운영이 아닌 메인 버전으로 운영됩니다.
-        - 24/7 운영 중단
+    - Docker : X
+        - 추후 별도로 제공될 예정은 있을 수 있으나 지금은 제공되지 않습니다.
 
 ## Community[커뮤니티]
 
@@ -30,15 +35,6 @@ HYolss는 처음에는 개인 즉 재가 사용하려고 제작을 시작했던 
 </p>
 
 ## announcements 📢
-
-이 봇은 HYolss의 Lite 버전. 즉 일부 분리된 버전임을 말합니다.<br>
-개발중인 봇의 레포는 아레 링크에서 확인해주세요
-
-https://github.com/SOIV-Studio/HYolss
-
----
-아쉽개도 Lite 버전에서도 Docker파일은 제공되지 않습니다.<br>
-추후 별도로 제공될 예정은 있을 수 있으나 지금은 제공되지 않습니다.
 
 ## Features[특징] 🎉
 
@@ -167,12 +163,6 @@ Make sure you have the following installed:
     * [조건부 수정] 깃허브 레포가 private의 조건 작업(PAT(Personal Access Token) 작업)
         - Lite 버전의 레포는 private으로 전환할 예정이 아에 없음
         - 추후 작업때에 같이 업데이트로 수정될 듯
-- commands\default\help.js 관련 작업 필요
-    * 깃북에서도 작업중이지만 별도 간단한 설명을 해줄수 있는 명령어가 필요
-- [x] random-words-store의 DB?
-    * 기존 내부에 txt 파일에 저장된 내용을 불러오는 방식에서 DB에서 불러오는 방식으로 교채 하는 것도 생각중.
-        - 사유: Lite 버전과 메인 버전의 음식 등록되는 단어 개수의 싱크를 맞추기 위해
-        - 작업 확정 / txt 파일에서 supabase으로 이전 작업 준비중 / 기존 레포에서 적용 후 Lite에 적용 예정
 
 ## Contributing[기어] 💖
 
@@ -203,8 +193,8 @@ Make sure you have the following installed:
 
 ## License 📝
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.<br>
-(KR) 이 프로젝트 및 레포는 MIT 라이센스를 따라갑니다 - 자세한 내용은 [LICENSE](LICENSE) 파일을 확인 해주세요.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.<br>
+(KR) 이 프로젝트 및 레포는 GPL-3.0 라이센스를 따라갑니다 - 자세한 내용은 [LICENSE](LICENSE) 파일을 확인 해주세요.
 
-SOIV Studio / Palette Square Studio (PS Studio)<br>
-HYolss Project 2020~2025
+© 2020 ~ 2025 SOIV Studio, PSquare DIVISION. All Rights Reserved.<br>
+Ayaka Project & HYolss Project
