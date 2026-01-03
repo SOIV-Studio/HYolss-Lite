@@ -25,6 +25,18 @@
     - Docker : X
         - 추후 별도로 제공될 예정은 있을 수 있으나 지금은 제공되지 않습니다.
 
+## 프로젝트 히스토리 📚
+
+### Ayaka Project (미디어 믹스 프로젝트)
+HYolss Project는 현재 **Ayaka Project**의 일부입니다.
+- **시작**: 2020년 HYolss Project로 시작
+- **발전**: 미디어 믹스 프로젝트로 확장하여 Ayaka Project로 통합
+- **현재**: Ayaka Project 내 HYolss Project로 운영
+
+### 관련 문서
+- **미디어 믹스 관련**: [Ayaka Project Notion](https://kileu-network.notion.site/Ayaka-Project-25edffb97eda807ca6e8d383d65b7a2d?source=copy_link)
+- **프로젝트 연혁**: 2020~ Ayaka Project(HYolss Project) by SOIV Studio (from. PSquare DIVISION)
+
 ## Community[커뮤니티]
 
 <p align="center">
@@ -39,22 +51,23 @@
 ## Features[특징] 🎉
 
 - 오늘의 시리즈!
-    * 이 시리즈에는 이스터에그가 존제해요! 명령어를 입력하고 같은 확률에 따라 나타나는 이스터에그를 확인해보세요!
-    * '/오늘의메뉴'
+    - 이 시리즈에는 이스터에그가 존제해요! 명령어를 입력하고 같은 확률에 따라 나타나는 이스터에그를 확인해보세요!
+    - '/오늘의메뉴'
         - 무엇을 먹을지 고민되시나요? '/오늘의메뉴'를 통하여 메뉴를 정해보세요!
         - '/오늘의메뉴'에는 지금까지 등록된 음식의 종료는 총 119개가 있어요!
-    * '/오늘의편의점'
+    - '/오늘의편의점'
         - 편의점을 갔는데 오늘은 무엇을 사갈지 고민되시나요? '/오늘의편의점'을 통하여 선택해보세요!
         - '/오늘의편의점'에는 지금까지 등록된 리스트는 총 11개가 있어요!
         - GS25, CU, 7-ELEVEn 등의 공통된 메뉴들을 지원하고 있습니다.
-    * 메뉴를 추가 하고 싶다면 '/메뉴추가' 를 사용하여 추가해보세요!
+    - 메뉴를 추가 하고 싶다면 '/메뉴추가' 를 사용하여 추가해보세요!
         - 현재는 명령어가 개발자 전용으로 제작되어 있지만 추후 배포 버전으로 수정하여 업데이트 예정이에요!
+    - List : https://docs.google.com/spreadsheets/d/1KHFYAcoKA0Cf6emJUF8DfJbrUtn9y0snBKsrnjXXT6w/edit?usp=sharing
 - 업데이트 / 자동 업데이트 기능
-    * 봇을 가저와서 직접 돌리고 있는데 업데이트가 생길때마다 일일이 봇의 업데이트를 하기 귀찬으시죠? 그래서 제가 기능을 만들어 드렸습니다!
-    * '/updete' 명령어를 통하여 디스코드에서 업데이트를 해보세요!
-    * 이 기능을 사용하기전 .env에서 디스코드 웹훅 링크를 꼭 추가해주세요!
+    - 봇을 가저와서 직접 돌리고 있는데 업데이트가 생길때마다 일일이 봇의 업데이트를 하기 귀찬으시죠? 그래서 제가 기능을 만들어 드렸습니다!
+    - '/updete' 명령어를 통하여 디스코드에서 업데이트를 해보세요!
+    - 이 기능을 사용하기전 .env에서 디스코드 웹훅 링크를 꼭 추가해주세요!
         - 업데이트가 작동하는 로그를 확인 하실 수 있습니다.
-    * **Lite 버전에서는 자동 업데이트 기능를 지원하지 않습니다.**
+    - **Lite 버전에서는 자동 업데이트 기능를 지원하지 않습니다.**
 
 ## Setup 🛠️
 
@@ -66,8 +79,8 @@ Make sure you have the following installed:
 - node.js Version : v22.14.0 or above
 - Discord.js Version : v14.18.0 or above
 - Database(DB) Version :
-    * Supabase (PostgreSQL 기반)
-    * MongoDB Atlas (NoSQL)
+    - Supabase (PostgreSQL 기반)
+    - MongoDB Atlas (NoSQL)
 
 ### Development Mode 🔧
 
@@ -151,16 +164,16 @@ Make sure you have the following installed:
 ## To-Do 📝
 
 - [ ] 오프닝 인사 방식 수정
-    * 라이트 버전에 맞는 방식으로 수정 예정
-    * 기존에 사용하는 방식에 사용중인 DB 연동 제외
-    * 서버 입장 오프닝 인사는 단일 한개로 변경
+    - 라이트 버전에 맞는 방식으로 수정 예정
+    - 기존에 사용하는 방식에 사용중인 DB 연동 제외
+    - 서버 입장 오프닝 인사는 단일 한개로 변경
 - [ ] auto-updater / updater
-    * 월래라면 라이트 버전에 맞게 업데이트 시스템도 삭제를 해야 맞다고 생각하지만 만약을 위해 남김
-    * 근대 자동 업데이트는 삭제 하고 사용자가 업데이트 요청을 하면 업데이트가 작동하는 방식으로 수정할듯
+    - 월래라면 라이트 버전에 맞게 업데이트 시스템도 삭제를 해야 맞다고 생각하지만 만약을 위해 남김
+    - 근대 자동 업데이트는 삭제 하고 사용자가 업데이트 요청을 하면 업데이트가 작동하는 방식으로 수정할듯
         - 이유 : 라이트 버전이라 메모리에 부담이 없어야 되는데 자동 업데이트가 작동중일때 기능 작동에 부담이 갈 수 있어서
-    * [조건부 수정] ~~버전이 똑같더라도 깃허브 해쉬가 동일하지 않으면 업데이트 실행~~
+    - [조건부 수정] ~~버전이 똑같더라도 깃허브 해쉬가 동일하지 않으면 업데이트 실행~~
         - 이거 강재 업데이트 명령어 안되던거 수정해서 버전이 같더라도 업데이트 작동하도록 수정됨
-    * [조건부 수정] 깃허브 레포가 private의 조건 작업(PAT(Personal Access Token) 작업)
+    - [조건부 수정] 깃허브 레포가 private의 조건 작업(PAT(Personal Access Token) 작업)
         - Lite 버전의 레포는 private으로 전환할 예정이 아에 없음
         - 추후 작업때에 같이 업데이트로 수정될 듯
 
@@ -196,5 +209,5 @@ Make sure you have the following installed:
 This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.<br>
 (KR) 이 프로젝트 및 레포는 GPL-3.0 라이센스를 따라갑니다 - 자세한 내용은 [LICENSE](LICENSE) 파일을 확인 해주세요.
 
-© 2020 ~ 2025 SOIV Studio, PSquare DIVISION. All Rights Reserved.<br>
+© 2020-2026 SOIV Studio, PSquare DIVISION. Licensed under GPL-3.0.<br>
 Ayaka Project & HYolss Project
